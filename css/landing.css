@@ -46,8 +46,7 @@ h3{
     line-height: 3.36em;
 }
 
-.wrapper, .wrapper2 {
-    max-width: 1438px;
+.wrapper {
     width: 100%;
     margin: 0 auto;
 }
@@ -73,13 +72,14 @@ h3{
     font-size: 11px;
     line-height: 1.36em;
     text-transform: uppercase;
+    margin-left: 6px;
     min-width: 154px;
 }
 
 .header_nav nav {
     display: flex;
-    flex: 0 1 570px;
-    margin-left: 79px;
+    flex: 0 1 584px;
+    margin-left: 74px;
 }
 
 .header_nav_ul {
@@ -102,7 +102,7 @@ h3{
 }
 .header_nav_phone{
     font-size: 11px;
-    margin-left: 50px;
+    margin-left: 52px;
     min-width: 103px;
 }
 
@@ -111,9 +111,13 @@ h3{
     min-width: 104px;
     height: 37px;
     font-size: 11px;
-    margin-left: 1%;
+    margin-right: -10px;
 }
-
+@media screen and (max-width: 1366px){
+    .header_nav_button {
+        margin-left: 1%;
+    }
+}
 @media screen and (max-width: 1280px) {
     .header_nav nav {
         margin-left: 50px;
@@ -183,12 +187,13 @@ h3{
     top: 27%;
     left: 9%;
     width: 41em;
+    padding-left: 7px;
 }
 
 .header_image_buttons_item {
     width: 207px;
     height: 51px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .transparent {
@@ -239,6 +244,7 @@ h3{
         width: 92%;
     }
     .header_image_text h1 {
+        font-size: 38px;
         width: 82%;
     }
     .header_image_buttons_item {
@@ -248,6 +254,7 @@ h3{
         }
     .header_image_text p {
         margin: 23px 0 53px 0;
+        font-size: 19px;
     }
     .transparent {
         margin-top: 26px;
@@ -258,6 +265,9 @@ h3{
         width: 100%;
         max-width: 2500px;
     }
+    .logo{
+        margin-left: 37px;
+    }
     .header_image {
         height: 707px;
         background: url("../img/header-large.jpg") center no-repeat;
@@ -266,10 +276,21 @@ h3{
         display: none;
     }
     .header_image_text {
-        left: 27%;
+        left: 674px;
+        padding-left: 10px;
     }
     .header_nav {
-        padding: 0 4%;
+        padding: 0 3%;
+    }
+    .header_nav nav {
+        flex: 0 1 584px;
+        margin-left: 90px;
+    }
+    .header_nav_phone {
+        margin-left: 72px;
+    }
+    .header_image_buttons_item {
+        margin-right: 16px;
     }
 }
 
@@ -803,12 +824,15 @@ h3{
 
 
 .free_departure {
+    max-width: 1440px;
     height: 555px;
-    background: url("../img/free1.jpg") -75px top no-repeat;
+    background: url(../img/free1.jpg) -75px top no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 195px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .free_departure-steps {
@@ -954,6 +978,23 @@ h3{
     height: 84px;
     background-image: url("../img/pig.svg");
 }
+@media screen and (max-width: 2500px){
+    .free_departure-discount p {
+        margin: 30px 0 30px 56%;
+    }
+}
+
+@media screen and (max-width: 2000px){
+    .free_departure-discount p {
+        margin: 30px 0 30px 58%;
+    }
+}
+
+@media screen and (max-width: 1680px){
+    .free_departure-discount p {
+        margin: 30px 0 30px 60%;
+    }
+}
 
 @media screen and (max-width: 1280px){
     .free_departure-steps {
@@ -1022,13 +1063,18 @@ h3{
 .fantasies-mobile {
     padding: 0 8% 0;
 }
-
+.background{
+    background: url("../img/fantasies5.jpg") no-repeat;
+    background-size: cover;
+    height: 877px;
+}
 .your_fantasies {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("../img/fantasies5.jpg") no-repeat;
-    background-size: contain;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .your_fantasies-list_list {
@@ -1071,6 +1117,17 @@ h3{
 .your_fantasies-photo1 img, .your_fantasies-photo2 img {
     width: 100%;
     height: auto;
+}
+@media screen and (min-width: 1451px) {
+    .background {
+        margin-bottom: 102px;
+    }
+}
+@media screen and (max-width: 1450px){
+    .background {
+        background-size: contain;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 1280px){
@@ -1339,12 +1396,16 @@ h3{
     }
 }
 
-
-.address {
+.background2{
     background-image: url('../img/component5.jpg');
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: cover;
+}
+.address {
     display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .address_map {
@@ -1456,9 +1517,13 @@ h3{
     }
 }
 
+.background3 {
+    background-color: #131313;
+}
 
 .footer_nav {
     height: 133px;
+    margin: 0 auto;
 }
 .orange_text {
     color: #E3BB73;
