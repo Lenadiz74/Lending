@@ -263,20 +263,19 @@ h3{
 @media screen and (min-width: 1441px){
     .wrapper {
         width: 100%;
-        max-width: 2500px;
     }
     .logo{
         margin-left: 37px;
     }
     .header_image {
         height: 707px;
-        background: url("../img/header-large.jpg") center no-repeat;
+        background: url("../img/header-large_2550.jpg") center no-repeat;
     }
     .image_for_big_screen {
         display: none;
     }
     .header_image_text {
-        left: 674px;
+        left: 694px;
         padding-left: 10px;
     }
     .header_nav {
