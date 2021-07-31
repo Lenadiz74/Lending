@@ -227,7 +227,7 @@ h3{
 @media screen and (max-width: 986px) {
     .header_image {
         height: 476px;
-        background: url("../img/background.jpg") center no-repeat;
+        background: url("../img/background.jpg") center no-repeat black;
         background-size: auto 476px;
     }
     .image_for_big_screen {
