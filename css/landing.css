@@ -384,6 +384,7 @@ h3{
 .slide_switch__button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .slide_1-media ul {
