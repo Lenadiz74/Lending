@@ -1,7 +1,9 @@
 export class Slider {
 
-    getDomElements = (elementSelector) => document.querySelectorAll(elementSelector);
+    timeoutToNextSlide = 3000;
+    interval;
 
+    getDomElements = elementSelector => document.querySelectorAll(elementSelector);
 
     imageElement = document.querySelectorAll('.slider_image');
 
@@ -78,6 +80,8 @@ export class Slider {
         this.setActiveClass(slideNumber, 'active', '.svg__circle');
         this.setActiveClass(slideNumber, 'selected', '.slide__header');
         this.setSlideText(slideNumber);
+        clearInterval(this.interval);
+        this.setInterval(this.timeoutToNextSlide);
     }
 
     nextSlide = () => {
@@ -125,7 +129,8 @@ export class Slider {
         })
     }
 
-    setInterval = (timeOut) => {
-        setInterval(this.nextSlide,timeOut);
+    setInterval = timeout => {
+        this.timeoutToNextSlide = timeout
+        this.interval = setInterval(this.nextSlide,timeout);
     }
 }
