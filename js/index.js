@@ -15,3 +15,11 @@ function changePosition(){
         document.getElementById('header_positioned').setAttribute('style', 'left:' + 694 + 'px');
     }
 }
+
+import {Slider} from './slider';
+
+const slider = new Slider();
+
+slider.init();
+
+setInterval(slider.nextSlide,2000);

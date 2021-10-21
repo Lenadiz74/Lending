@@ -380,6 +380,11 @@ h3{
     margin-left: 29px;
 }
 
+.slide_switch__button {
+    background: none;
+    border: none;
+}
+
 .slide_1-media ul {
     display: flex;
     padding: 0;
@@ -396,15 +401,15 @@ h3{
     margin: 0 61px;
 }
 
+.unselected {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
 .selected {
     color: #E3BB73;
     text-decoration: underline;
     text-underline-offset: 9px;
-}
-
-.unselected {
-    color: rgba(255, 255, 255, 0.3);
-    text-decoration: none;
 }
 
 .slide_1-for_mobile, .slide_1-media_small, .button_for_mobile {
@@ -1503,7 +1508,7 @@ h3{
     .address_social {
         margin-bottom: 50px;
     }
-    .socialll {
+    .social {
         width: 39px;
         height: 39px;
         margin-right: 21px;
@@ -1526,4 +1531,8 @@ h3{
 }
 .orange_text {
     color: #E3BB73;
+}
+
+.active rect {
+    fill-opacity: 1;
 }

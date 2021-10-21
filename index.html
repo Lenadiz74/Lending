@@ -59,20 +59,20 @@
                             </div>
                             <div class="slide_1-media">
                                 <ul>
-                                    <li><a class="selected" href="#">Rostov-on-Don, Admiral</a></li>
-                                    <li><a class="unselected" href="#">Sochi Thieves</a></li>
-                                    <li><a  class="unselected" href="#">Rostov-on-Don Patriotic</a></li>
+                                    <li><p class="slide__header slide_switch__button button-first unselected selected">Rostov-on-Don, Admiral</p></li>
+                                    <li><p class="slide__header slide_switch__button button-second unselected">Sochi Thieves</p></li>
+                                    <li><p class="slide__header slide_switch__button button-third unselected">Rostov-on-Don Patriotic</p></li>
                                 </ul>
-                                <img class="slide_1-media_large" src="img/image_2.1.jpg" alt="img/image_2.1.jpg" width="679" height="482">
-                                <img class="slide_1-media_small" src="img/completed_projects_small.jpg" alt="" width="340" height="242">
+                                <img class="slide_1-media_large slider_image" src="img/slide_1.jpg" alt="img/slide_1.jpg" width="679" height="482">
+                                <img class="slide_1-media_small slider_image" src="img/slide_1.jpg" alt="" width="679" height="482">
                                 <div class="slide_1-media-button_for_mobile">
-                                    <button class="button_for_mobile">
+                                    <button class="button_for_mobile slide_switch__button button-left">
                                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="17.9999" cy="17.9999" r="18.0001" transform="rotate(-180 17.9999 17.9999)" fill="#E3B873"/>
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5657 23.478L14.0869 17.9997L19.5657 12.5215L20.3478 13.3035L15.6511 17.9997L20.3478 22.696L19.5657 23.478Z" fill="white" stroke="white" stroke-width="0.75"/>
                                         </svg>
                                     </button>
-                                    <button class="button_for_mobile">
+                                    <button class="button_for_mobile slide_switch__button button-right">
                                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="18.0001" cy="18.0001" r="18.0001" fill="#E3B873"/>
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4343 12.522L21.9131 18.0003L16.4343 23.4785L15.6522 22.6965L20.3489 18.0003L15.6522 13.304L16.4343 12.522Z" fill="white" stroke="white" stroke-width="0.75"/>
@@ -83,14 +83,14 @@
                             <div class="slide_1-text-parameters">
                                 <div class="parameters-1">
                                     <h3 class="orange_text">City:</h3>
-                                    <p class="white_text">Rostov-on-Don<br>
+                                    <p class="white_text city">Rostov-on-Don<br>
                                         LCD admiral</p>
                                     <h3 class="orange_text">Repair time:</h3>
-                                    <p class="white_text">3.5 months</p>
+                                    <p class="white_text repair__time">3.5 months</p>
                                 </div>
                                 <div class="parameters-2">
                                     <h3 class="orange_text">apartment area:</h3>
-                                    <p class="white_text">81 m2</p>
+                                    <p class="white_text apartment__area">81 m2</p>
                                     <h3 class="orange_text">Repair Cost:</h3>
                                     <p class="white_text">Upon request</p>
                                 </div>
@@ -98,19 +98,31 @@
                             <div class="slide_switch">
                                 <ul>
                                     <li>
-                                        <a href="#"><img src="img/arrow_left.svg" alt="img/arrow_left.svg" width="42" height="14"></a>
+                                        <button class="slide_switch__button button-left"><img src="img/arrow_left.svg" alt="img/arrow_left.svg" width="42" height="14"></button>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/active_circle.svg" alt="img/active_circle.svg" height="11" width="11"></a>
+                                        <button class="slide_switch__button button-first">
+                                            <svg class="svg__circle" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                            </svg>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/circle.svg" alt="img/circle.svg" width="11" height="11"></a>
+                                        <button class="slide_switch__button button-second">
+                                            <svg class="svg__circle" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                            </svg>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/circle.svg" alt="img/circle.svg" width="11" height="11"></a>
+                                        <button class="slide_switch__button button-third">
+                                            <svg class="svg__circle" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                            </svg>
+                                        </button>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/arrow_right.svg" alt="img/arrow_right.svg" height="14" width="42"></a>
+                                        <button class="slide_switch__button button-right"><img src="img/arrow_right.svg" alt="img/arrow_right.svg" height="14" width="42"></button>
                                     </li>
                                 </ul>
                             </div>
@@ -124,14 +136,13 @@
                                 <div class="slide_1-text-parameters">
                                     <div class="parameters-1">
                                         <h3 class="orange_text">City:</h3>
-                                        <p class="white_text">Rostov-on-Don<br>
-                                            LCD admiral</p>
+                                        <p class="white_text city">Rostov-on-Don LCD admiral</p>
                                         <h3 class="orange_text">Repair time:</h3>
-                                        <p class="white_text">3.5 months</p>
+                                        <p class="white_text repair__time">3.5 months</p>
                                     </div>
                                     <div class="parameters-2">
                                         <h3 class="orange_text">apartment area:</h3>
-                                        <p class="white_text">81 m2</p>
+                                        <p class="white_text apartment__area">81 m2</p>
                                         <h3 class="orange_text">Repair Cost:</h3>
                                         <p class="white_text">Upon request</p>
                                     </div>
@@ -139,30 +150,42 @@
                                 <div class="slide_switch">
                                     <ul>
                                         <li>
-                                            <a href="#"><img src="img/arrow_left.svg" alt="img/arrow_left.svg" width="42" height="14"></a>
+                                            <button class="slide_switch__button button-left"><img src="img/arrow_left.svg" alt="img/arrow_left.svg" width="42" height="14"></button>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="img/active_circle.svg" alt="img/active_circle.svg" height="11" width="11"></a>
+                                            <button class="slide_switch__button button-first">
+                                                <svg class="svg__circle active" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                                </svg>
+                                            </button>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="img/circle.svg" alt="img/circle.svg" width="11" height="11"></a>
+                                            <button class="slide_switch__button button-second">
+                                                <svg class="svg__circle" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                                </svg>
+                                            </button>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="img/circle.svg" alt="img/circle.svg" width="11" height="11"></a>
+                                            <button class="slide_switch__button button-third">
+                                                <svg class="svg__circle" width="10" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="0.0583191" y="0.456543" width="9.56667" height="9.56667" rx="4.78333" fill="white" fill-opacity="0.3"/>
+                                                </svg>
+                                            </button>
                                         </li>
                                         <li>
-                                            <a href="#"><img src="img/arrow_right.svg" alt="img/arrow_right.svg" height="14" width="42"></a>
+                                            <button class="slide_switch__button button-right"><img src="img/arrow_right.svg" alt="img/arrow_right.svg" height="14" width="42"></button>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="slide_1-media">
                                 <ul>
-                                    <li><a class="selected" href="#">Rostov-on-Don, Admiral</a></li>
-                                    <li><a class="unselected" href="#">Sochi Thieves</a></li>
-                                    <li><a  class="unselected" href="#">Rostov-on-Don Patriotic</a></li>
+                                    <li><p class="slide__header slide_switch__button button-first  unselected selected" >Rostov-on-Don, Admiral</p></li>
+                                    <li><p class="slide__header slide_switch__button button-second unselected" >Sochi Thieves</p></li>
+                                    <li><p class="slide__header slide_switch__button button-third  unselected" >Rostov-on-Don Patriotic</p></li>
                                 </ul>
-                                <img src="img/image_2.1.jpg" alt="img/image_2.1.jpg" width="679" height="482">
+                                <img class="slider_image" src="img/slide_1.jpg" alt="img/slide_1.jpg" width="679" height="482">
                             </div>
                         </div>
                     </div>
@@ -512,7 +535,7 @@
         </footer>
     </div>
 
-    <script src="js/js.js"></script>
+    <script type="module" src="./js/index.js"></script>
 
 </body>
 </html>
