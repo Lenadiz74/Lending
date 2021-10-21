@@ -16,7 +16,7 @@ function changePosition(){
     }
 }
 
-import {Slider} from './slider';
+import {Slider} from './slider.js';
 
 const slider = new Slider();
 
