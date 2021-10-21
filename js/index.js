@@ -22,4 +22,4 @@ const slider = new Slider();
 
 slider.init();
 
-setInterval(slider.nextSlide,2000);
+setInterval(slider.nextSlide,3000);
