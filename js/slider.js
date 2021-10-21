@@ -124,4 +124,8 @@ export class Slider {
             element.textContent = this.slidersData[slideNumber][dataField];
         })
     }
+
+    setInterval = (timeOut) => {
+        setInterval(this.nextSlide,timeOut);
+    }
 }
