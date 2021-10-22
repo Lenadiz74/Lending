@@ -77,12 +77,12 @@ export class Slider {
         this.imageElement.forEach((element) => {
             element.src = this.slidersData[slideNumber].imageSrc;
         })
-        this.setActiveClass(slideNumber, 'active', '.svg__circle');
-        this.setActiveClass(slideNumber, 'selected', '.slide__header');
-        this.setSlideText(slideNumber);
+        this.setActivatingClass(slideNumber, 'active', '.svg__circle');
+        this.setActivatingClass(slideNumber, 'selected', '.slide__header');
+        this.slideTextChange(slideNumber);
         if (this.timeoutToNextSlide !== 0){
             clearInterval(this.interval);
-            this.setInterval(this.timeoutToNextSlide);
+            this.sliderPagingDelay(this.timeoutToNextSlide);
         }
     }
 
@@ -106,8 +106,8 @@ export class Slider {
         }
     }
 
-    setActiveClass = (currentSlideNumber, activeClass, DOMElement) => {
-        const domElementsNode = this.getDomElements(DOMElement);
+    setActivatingClass = (currentSlideNumber, activeClass, domElementClassName) => {
+        const domElementsNode = this.getDomElements(domElementClassName);
         const domElementIndexForMobileLayout = currentSlideNumber - 1;
         const domElementIndexForDesktopLayout = currentSlideNumber + 2;
         domElementsNode.forEach((element) => {
@@ -117,23 +117,23 @@ export class Slider {
         domElementsNode[domElementIndexForDesktopLayout].classList.add(activeClass);
     }
 
-    setSlideText = (slideNumber) => {
-        const cityFields = this.getDomElements('.city');
-        const apartmentAreaFields = this.getDomElements('.apartment__area');
-        const repairTimeFields = this.getDomElements('.repair__time');
+    slideTextChange = slideNumber => {
+        const cityFieldsNodeList = this.getDomElements('.city');
+        const apartmentAreaFieldsNodeList = this.getDomElements('.apartment__area');
+        const repairTimeFieldsNodeList = this.getDomElements('.repair__time');
 
-        this.setContent(slideNumber, cityFields, 'CITY');
-        this.setContent(slideNumber, apartmentAreaFields, 'APARTMENT AREA');
-        this.setContent(slideNumber, repairTimeFields, 'REPAIR TIME');
+        this.setContent(slideNumber, cityFieldsNodeList, 'CITY');
+        this.setContent(slideNumber, apartmentAreaFieldsNodeList, 'APARTMENT AREA');
+        this.setContent(slideNumber, repairTimeFieldsNodeList, 'REPAIR TIME');
     }
 
-    setContent = (slideNumber, element, dataField) => {
-        element.forEach((element) => {
-            element.textContent = this.slidersData[slideNumber][dataField];
+    setContent = (slideNumber, elementsNodeList, argumentName) => {
+        elementsNodeList.forEach((element) => {
+            element.textContent = this.slidersData[slideNumber][argumentName];
         })
     }
 
-    setInterval = timeout => {
+    sliderPagingDelay = timeout => {
         this.timeoutToNextSlide = timeout;
         this.interval = setInterval(this.nextSlide,timeout);
     }

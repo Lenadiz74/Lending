@@ -20,6 +20,8 @@ import {Slider} from './slider.js';
 
 const slider = new Slider();
 
+console.log(slider);
+
 slider.init();
 
-slider.setInterval(3000);
+slider.sliderPagingDelay(3000);
