@@ -52,7 +52,7 @@ export class Slider {
 
         if (classListOfEventTarget.contains('button-left')) {
 
-            this.previousSlide(this.currentSlideNumber);
+            this.previousSlide();
 
         } else if (classListOfEventTarget.contains('button-first')) {
 
@@ -68,7 +68,7 @@ export class Slider {
 
         } else if (classListOfEventTarget.contains('button-right')) {
 
-            this.nextSlide(this.currentSlideNumber);
+            this.nextSlide();
         }
     }
 
@@ -107,12 +107,14 @@ export class Slider {
     }
 
     setActiveClass = (currentSlideNumber, activeClass, DOMElement) => {
-        const svgArray = this.getDomElements(DOMElement);
-        svgArray.forEach((element) => {
+        const domElementsNode = this.getDomElements(DOMElement);
+        const domElementIndexForMobileLayout = currentSlideNumber - 1;
+        const domElementIndexForDesktopLayout = currentSlideNumber + 2;
+        domElementsNode.forEach((element) => {
             element.classList.remove(activeClass);
         })
-        svgArray[currentSlideNumber - 1].classList.add(activeClass);
-        svgArray[currentSlideNumber + 2].classList.add(activeClass);
+        domElementsNode[domElementIndexForMobileLayout].classList.add(activeClass);
+        domElementsNode[domElementIndexForDesktopLayout].classList.add(activeClass);
     }
 
     setSlideText = (slideNumber) => {
